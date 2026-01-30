@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Штучний Інтелект — Інформаційний портал</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #050014, #0b0033);
+            color: #ffffff;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #000000;
+            padding: 20px 40px;
+            border-bottom: 2px solid #7f00ff;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px #00eaff);
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00eaff;
+        }
+
+        .site-title {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .site-title h1 {
+            font-size: 36px;
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+        }
+
+        .site-title p {
+            color: #cccccc;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* ===== MAIN ===== */
+        main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #0a0026;
+            border-radius: 15px;
+            width: 320px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(127, 0, 255, 0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00eaff;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            color: #7f9cff;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            background: #00eaff;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 0 10px #00eaff;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .card-content a:hover {
+            background: #7f00ff;
+            box-shadow: 0 0 15px #7f00ff;
+            color: #fff;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #aaa;
+            margin-top: 40px;
+            border-top: 2px solid #7f00ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+
+        <!-- ЛОГОТИП -->
+        <div class="logo">
+            <!-- ЗАМІНИ logo.png НА СВІЙ ФАЙЛ -->
+            <img src="https://i.postimg.cc/xTVxpbK2/AI-logo.jpg" alt="Логотип сайту">
+            <span>AI Portal</span>
+        </div>
+
+        <!-- НАЗВА САЙТУ -->
+        <div class="site-title">
+            <h1>Штучний Інтелект</h1>
+            <p>Інформаційний портал про сучасні технології ШІ</p>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <section class="cards">
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvfG8cqOQxdkGwm6HfuYCrWeY9PtGs-iSr1g&s" alt="Що таке ШІ">
+            <div class="card-content">
+                <h2>Що таке ШІ</h2>
+                <p>
+                    Штучний інтелект — це здатність комп’ютерних систем навчатися,
+                    аналізувати дані та приймати рішення.
+                    
+                </p>
+                <a href="https://www.youtube.com/watch?v=v2QbGq77ahM" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLj67S2tTuzpkTc0zyQJDC39u2sudJag-c5A&s" alt="ШІ в медицині">
+            <div class="card-content">
+                <h2>ШІ в медицині</h2>
+                <p>
+                    Технології ШІ допомагають у діагностиці, лікуванні
+                    та аналізі медичних даних.
+                     </p>
+                <a href="https://www.youtube.com/watch?v=v2QbGq77ahM" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://catsite.com.ua/wp-content/uploads/2024/02/artificial-intelligence-element-1536x878.webp" alt="ШІ в медицині">
+            <div class="card-content">
+                <h2>Історія ШІ</h2>
+                <p>
+                    Як розвивався ШІ
+                    </p>
+                <a href="https://www.youtube.com/watch?v=DCSvTizClFA" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://ai360.com.ua/wp-content/uploads/2024/07/746x420-1.jpg" alt="ШІ в медицині">
+            <div class="card-content">
+                <h2>ШІ в економіці</h2>
+                <p>
+                    Майбутнє штучного інтелекту у економіці
+                    та аналізі медичних даних.
+                </p>
+                <a href="https://www.youtube.com/watch?v=O2U88-rHiVo" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://storage.googleapis.com/support-kms-prod/FITp8fRpaOwSuEvziUFpQNrwbJMZXMx3D7jH" alt="ШІ в освіті">
+            <div class="card-content">
+                <h2>ШІ в освіті</h2>
+                <p>
+                    ШІ робить навчання персоналізованим,
+                    допомагаючи учням та викладачам.
+                    </p>
+                <a href="https://www.youtube.com/watch?v=fKtCPM-ZS-0" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirE091hiD1AbuiEzD81YnOhzFMN-1fJcaFxEXBHa138a3YnVpuWqsovAdNQEsn2bb4p3pEt_MjQcjGGrv4dN5VhTXLv_FJ46zcvCuadbFIAbb3vQeKoaIijtidLrBop3SHwfWhwRckjOim/s1600/a7fd5d9bc72fb2dd77a1e2a4d00d77a6.jpg" alt="ШІ в освіті">
+            <div class="card-content">
+                <h2>ШІ замінить людей?</h2>
+                <p>
+                    Чи ШІ замінить людей?,
+                    допомагаючи учням та викладачам.
+                </p>
+                <a href="https://www.youtube.com/watch?v=JVuDw85ijyE" target="_blank">Дивитись відео</a>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    © 2025 Інформаційний портал про штучний інтелект
+</footer>
+
+</body>
+</html>
